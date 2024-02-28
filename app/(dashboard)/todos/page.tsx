@@ -8,9 +8,9 @@ const getData = async () => {
 };
 
 const TodoPage = async () => {
-  await new Promise<void>((resolve, reject) =>
-    setTimeout(() => reject(), 2000)
-  );
+  // await new Promise<void>((resolve, reject) =>
+  //   setTimeout(() => resolve(), 2000)
+  // );
   const todos = await getData();
   return (
     <div>
